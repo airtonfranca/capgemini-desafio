@@ -140,10 +140,11 @@
 
                         Fire.$emit('CarregarTransacoes');
 
-                        Toast.fire({
-                            icon: 'success',
-                            title: 'Depósito incluído com sucesso!'
-                        });
+                        Swal.fire(
+                            'Depósito!',
+                            'Depósito efetuado com Sucesso',
+                            'success'
+                        )
 
                         this.$Progress.finish();
                         $('#deposito').modal('hide');
@@ -153,8 +154,8 @@
                         console.log("Error......", err);
                         Swal.fire({
                             icon: 'error',
-                            title: 'Oops...',
-                            text: 'Houve um erro ao processar requisição!',
+                            title: 'Error...',
+                            text: 'Houve um erro no depósito!',
                             // footer: ''
                         });
                     })
@@ -165,15 +166,11 @@
                 this.form.post('api/transacoes/sacar/')
                     .then(() => {
 
-                        // Toast.fire({
-                        //     icon: 'success',
-                        //     title: 'Retirada efetuada com Sucesso!'
-                        // });
-                        Swal.fire(
-                            'Retirada!',
-                            'Retirada efetuada com Sucesso',
-                            'success'
-                        )
+                         Toast.fire({
+                             icon: 'success',
+                             title: 'Transação Solicitada!'
+                         });
+                      
 
                         Fire.$emit('CarregarTransacoes');
 
@@ -183,8 +180,8 @@
                         console.log("Error......", err);
                         Swal.fire({
                             icon: 'error',
-                            title: 'Oops...',
-                            text: 'Houve um erro ao processar requisição!',
+                            title: 'Error...',
+                            text: 'Houve um erro ao realizar o saque!',
                             // footer: ''
                         });
                     })

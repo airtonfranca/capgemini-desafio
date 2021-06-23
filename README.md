@@ -11,6 +11,14 @@ seus clientes:
 2) Serviço para realizar um depósito em uma determinada contacorrente;
 3) Serviço para realizar um saque de uma determinada contacorrente.
 -------------
+TECNOLOGIAS
+---
+Foram utilizadas as seguintes tecnologias:
+- PHP 7.2
+- Laravel 7.24
+- Vue 2.5
+- Banco de Dados SQLite
+-------------
 PASSO A PASSO DE INSTALAÇÃO
 ----
 
