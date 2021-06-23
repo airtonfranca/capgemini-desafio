@@ -25,51 +25,51 @@ PASSO A PASSO DE INSTALAÇÃO
 Clone este Repositório:
 
 ```
-$ git clone https://github.com/airtonfranca/capgemini-desafio.git
+git clone https://github.com/airtonfranca/capgemini-desafio.git
 ```
 
 Entre no Diretório do Repositório:
 
 ```
-$ cd capgemini-desafio
+cd capgemini-desafio
 ```   
 
 Instale as Dependências (Projeto Laravel):
 
 ```
-$ composer install
+composer install
 ```
 
 Copie o arquivo .env:
 
 ```
-$ cp .env.example .env
+cp .env.example .env
 ```
 
 Crie o Banco de Dados vazio:
 
 O banco SQLite deve estar no local: `database/database.sqlite`
 ```
-$ touch database\database.sqlite
+touch database\database.sqlite
 ```
 
 Gere a Chave da Aplicação
 
 ```
-$ php artisan key:generate
+php artisan key:generate
 ```
 
 Migrations
 ```
-$ php artisan migrate
+php artisan migrate
 ```
 
 Instale as Dependências do Node (Projeto Vue):
 ```
-$ npm install
+npm install
 ```
 ```
-$ npm run prod
+npm run prod
 ```
 
 Execute servidor:
