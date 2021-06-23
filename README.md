@@ -50,7 +50,7 @@ Crie o Banco de Dados vazio:
 
 O banco SQLite deve estar no local: `database/database.sqlite`
 ```
-touch database\database.sqlite
+touch database/database.sqlite
 ```
 
 Gere a Chave da Aplicação
