@@ -75,5 +75,5 @@ npm run prod
 Execute servidor:
 
 ````
-php artisan serve 
+php artisan serve
 ````
